@@ -13,6 +13,8 @@
 		F610B11428BE5EBE00A60DC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F610B11228BE5EBE00A60DC6 /* Main.storyboard */; };
 		F610B11628BE5EBF00A60DC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F610B11528BE5EBF00A60DC6 /* Assets.xcassets */; };
 		F610B11928BE5EBF00A60DC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F610B11728BE5EBF00A60DC6 /* LaunchScreen.storyboard */; };
+		F610B12228BE609800A60DC6 /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = F610B12128BE609800A60DC6 /* PKHUD */; };
+		F610B12428BE61F900A60DC6 /* kabigon.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F610B12328BE61F900A60DC6 /* kabigon.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		F610B11528BE5EBF00A60DC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F610B11828BE5EBF00A60DC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F610B11A28BE5EBF00A60DC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F610B12328BE61F900A60DC6 /* kabigon.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kabigon.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F610B12228BE609800A60DC6 /* PKHUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +65,7 @@
 				F610B11028BE5EBE00A60DC6 /* ViewController.swift */,
 				F610B11228BE5EBE00A60DC6 /* Main.storyboard */,
 				F610B11528BE5EBF00A60DC6 /* Assets.xcassets */,
+				F610B12328BE61F900A60DC6 /* kabigon.jpeg */,
 				F610B11728BE5EBF00A60DC6 /* LaunchScreen.storyboard */,
 				F610B11A28BE5EBF00A60DC6 /* Info.plist */,
 			);
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = SwiftPMApp;
+			packageProductDependencies = (
+				F610B12128BE609800A60DC6 /* PKHUD */,
+			);
 			productName = SwiftPMApp;
 			productReference = F610B10928BE5EBE00A60DC6 /* SwiftPMApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = F610B10028BE5EBE00A60DC6;
+			packageReferences = (
+				F610B12028BE609800A60DC6 /* XCRemoteSwiftPackageReference "PKHUD" */,
+			);
 			productRefGroup = F610B10A28BE5EBE00A60DC6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,6 +139,7 @@
 				F610B11928BE5EBF00A60DC6 /* LaunchScreen.storyboard in Resources */,
 				F610B11628BE5EBF00A60DC6 /* Assets.xcassets in Resources */,
 				F610B11428BE5EBE00A60DC6 /* Main.storyboard in Resources */,
+				F610B12428BE61F900A60DC6 /* kabigon.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +370,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F610B12028BE609800A60DC6 /* XCRemoteSwiftPackageReference "PKHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pkluz/PKHUD";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F610B12128BE609800A60DC6 /* PKHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F610B12028BE609800A60DC6 /* XCRemoteSwiftPackageReference "PKHUD" */;
+			productName = PKHUD;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F610B10128BE5EBE00A60DC6 /* Project object */;
 }
